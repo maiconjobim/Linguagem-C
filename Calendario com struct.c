@@ -18,7 +18,7 @@
 			
 		}data_nascim;
 		
-		prntf("Digite o ano para gerar o calendario");
+		printf("Digite o ano para gerar o calendario ");
 	 	scanf("%d",&eano);
 		
 		
