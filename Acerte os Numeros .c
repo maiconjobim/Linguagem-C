@@ -14,17 +14,17 @@ int main()
     
     setlocale(LC_ALL, "Portuguese");
    
-    printf("*** *** ACERTE A SEQU�NCIA DE N�MEROS! *** ***\n");
+    printf("*** *** ACERTE A SEQUÊNCIA DE NÚMEROS! *** ***\n");
    
     do{
-    printf("Escolha o tamanho da sequ�ncia (entre 5 e 10 n�meros)\n");
+    printf("Escolha o tamanho da sequência (entre 5 e 10 números)\n");
     scanf("%d",&t);
     }while(t>max|t<5);
     
      srand(time(NULL));
     	
 	do{
-	 printf("DIGITE O VALOR M�XIMO DOS N�MEROS ALEAT�RIOS (LIMITE 100) \n");
+	 printf("DIGITE O VALOR MÁXIMO DOS NÚMEROS ALEATÓRIOS (LIMITE 100) \n");
     	 scanf("%d",&lim);
         }while(lim<0|lim>100); 
 		 
@@ -32,24 +32,24 @@ int main()
             v1[i]=((rand()%lim)+1);
            }
         
-		printf("memorize a sequ�ncia: ");
+		printf("memorize a sequência: ");
 		
 		for(int i=0;i<t;i++) printf("%d ",v1[i]);
         
 		Sleep(1000*t);
         system ("CLS");
         
-        printf("digite a sequ�ncia anterior ");
+        printf("digite a sequência anterior ");
         for(int i= 0;i<t;i++) scanf("%d",&v2[i]);
         
         for(int i=0;i<t; i++) {
 		if (v1[i] != v2[i]){
-			printf("Infelizmente voc� errou os n�meros !!! :-(");
+			printf("Infelizmente você errou os números !!! :-(");
 			condi= 1;
 			break;
 			} 
 		}
-	if(condi != 1) printf("Parab�ns, voc� acertou todos os numeros!!! :-D");
+	if(condi != 1) printf("Parabéns, você acertou todos os numeros!!! :-D");
 	
 	//printf("\n");
 	//for(int i=0;i<t;i++) printf("%d ",v1[i]);
