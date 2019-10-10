@@ -10,7 +10,7 @@
  {
  	
  	
- 	
+ 	int eano;
  		struct Data
 		{
 			int mes;
@@ -18,10 +18,11 @@
 			
 		}data_nascim;
 		
+		prntf("Digite o ano para gerar o calendario");
+	 	scanf("%d",&eano);
 		
 		
-		
-		data_nascim.ano =2015;
+		data_nascim.ano =eano;
 		FILE*p;
 		p= fopen("Novocalendario.TXT","w");
 		
